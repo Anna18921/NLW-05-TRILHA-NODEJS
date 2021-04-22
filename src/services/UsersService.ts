@@ -22,4 +22,11 @@ export default class UsersService {
 
         return user;
     }
+
+    async findByEmail(email: string){
+
+        const userExists = this.usersRepository.findOne({email});
+
+        return userExists;
+    }
 }
