@@ -2,7 +2,6 @@ import { io } from "../http";
 import ConnectionsService from "../services/ConnectionsService";
 import UsersService from "../services/UsersService";
 import MessagesService from "../services/MessagesService";
-import { stringify } from "uuid";
 
 interface IParams  {
     email: string;
